@@ -1,0 +1,19 @@
+import java.util.*;
+class Sirisha
+{
+public static void main(String args[])
+{
+String input;
+String word="";
+int i;
+System.out.println("Enter a String:");
+Scanner sc = new Scanner(System.in);
+input=sc.nextLine();
+int n=input.length();
+for(i=n;i>0;i--)
+{
+word=word+(input.charAt(i-1));
+}
+System.out.println("Reverse string is:"+ word);
+}
+}
