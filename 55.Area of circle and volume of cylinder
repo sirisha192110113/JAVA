@@ -1,0 +1,44 @@
+import java.util.*;
+class sup
+{
+    double r,area;
+    void call()
+    {
+        Scanner s=new Scanner(System.in);
+     System.out.println("enter radius");
+     r=s.nextInt();
+      area=3.14*r*r;  
+      System.out.println(area);
+    }
+}
+class cylinder extends sup
+{
+    double r,h,volume;
+    void get()
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter height");
+     h=s.nextInt();
+        volume=area*h;
+        System.out.println(volume);
+    }
+}
+class Cone extends cylinder
+{
+    double r,h,volume1;
+    void put()
+    {
+        volume1=1/3*volume;
+         System.out.println(volume1);
+    }
+}
+class over
+{
+    public static void main(String args[])
+    {
+        Cone obj=new Cone();
+        obj.call();
+        obj.get();
+        obj.put();
+    }
+}
