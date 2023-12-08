@@ -1,0 +1,33 @@
+import java.util.*;
+public class vote
+{
+public static void main(String args[])
+{
+try
+{
+int age;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter your age:");
+age=sc.nextInt();
+if(age>0)
+{
+if(age>=18)
+{
+System.out.println("You are Eligible to vote");
+}
+else
+{
+System.out.println("You are Eligible to vote after"+ (18-age) + "years");
+}
+}
+else
+{
+System.out.println("Enter positive number");
+}
+}
+catch(Exception e)
+{
+System.out.println("Enter only positive number");
+}
+}
+}
