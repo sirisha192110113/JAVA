@@ -1,0 +1,31 @@
+import java.util.*;
+class copy
+{ 
+	int a,b;
+	copy(int a1,int b1)
+	{
+		a=a1;
+		b=b1;
+	}
+	copy(copy c)
+	{
+		a=c.a;
+		b=c.b;
+	}
+	void view()
+	{
+		System.out.println("a = "+a+" "+"b = "+b);
+	}
+}
+class copytest
+{
+	public static void main(String s[])
+	{
+		copy c=new copy(10,15);
+		System.out.println("arg constructor");
+		c.view();
+		copy c1=new copy(c);
+		System.out.println("copy constructor");
+		c1.view();
+	}
+}
